@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CityModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Cities</h1>
+</div>
+
+<a class="btn btn-lg btn-primary active" asp-controller="City" asp-action="Create">Create</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>@nameof(CityModel.Name)</th>
+            <th>@nameof(CityModel.Latitude)</th>
+            <th>@nameof(CityModel.Longitude)</th>
+            <th>@nameof(CityModel.Temperature)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var city in Model)
+        {
+            <tr>
+                <td></td>
+                <td>@city.Name</td>
+                <td>@city.Latitude</td>
+                <td>@city.Longitude</td>
+                <td>@city.Temperature</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@city.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@city.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/NetRom.Weather/.vs
+/NetRom.Weather/NetRom.Weather.Application/bin/Debug/net8.0
+/NetRom.Weather.Application/bin/Debug/net8.0
+/NetRom.Weather.Application/obj
+/NetRom.Weather.Core/bin/Debug/net8.0
+/NetRom.Weather.Core/obj
+/NetRom.Weather.Infrastructure/bin/Debug/net8.0
+/NetRom.Weather.Infrastructure/obj
+/NetRom.Weather.Web/bin/Debug/net8.0
+/NetRom.Weather.Web/obj
